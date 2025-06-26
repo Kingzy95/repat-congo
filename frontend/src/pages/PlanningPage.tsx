@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const PlanningPage: React.FC = () => {
-  const [monthProgress, setMonthProgress] = useState({
+  const [monthProgress] = useState({
     month1: 40,
     month2: 20,
     month3: 0,

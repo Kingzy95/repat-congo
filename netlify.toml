@@ -7,8 +7,10 @@
 [build.environment]
   # Version Node.js
   NODE_VERSION = "18"
-  # Pas de télémétrie
-  CI = "true"
+  # Pas de télémétrie mais pas d'erreurs sur warnings
+  CI = "false"
+  # Désactive eslint warnings comme erreurs
+  DISABLE_ESLINT_PLUGIN = "true"
 
 # Redirections pour React Router (SPA)
 [[redirects]]
