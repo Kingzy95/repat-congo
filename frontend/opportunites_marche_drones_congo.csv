@@ -1,0 +1,8 @@
+Secteur,Potentiel_Marche_FCFA,Besoins_Identifiés,Concurrence_Niveau,Investissement_Initial,Délai_Retour
+Agriculture,500M-1B,"Cartographie, surveillance cultures, optimisation rendements",Faible,50-100M,12-18 mois
+Pétrole & Gaz,2B-5B,"Inspection pipelines, surveillance sites, détection fuites",Très faible,100-200M,6-12 mois
+Mines & Minerais,300M-800M,"Exploration, cartographie, surveillance sécurité sites",Faible,75-150M,12-24 mois
+BTP & Infrastructure,200M-500M,"Suivi chantiers, inspection ouvrages, topographie",Moyenne,60-120M,18-24 mois
+Sécurité & Surveillance,150M-400M,"Surveillance frontières, lutte braconnage, sécurité",Élevée,40-80M,24-36 mois
+Environnement & Forêts,100M-300M,"Surveillance déforestation, gestion ressources forestières",Faible,30-60M,18-30 mois
+Télécommunications,50M-200M,"Inspection antennes, surveillance infrastructures réseau",Moyenne,40-80M,15-24 mois

@@ -1,0 +1,24 @@
+# Database
+
+# Connect to Supabase via connection pooling
+DATABASE_URL="postgresql://postgres.ifjmtuxnhnzcidalbbfq:[YOUR-PASSWORD]@aws-0-eu-west-3.pooler.supabase.com:6543/postgres?pgbouncer=true"
+
+# Direct connection to the database. Used for migrations
+DIRECT_URL="postgresql://postgres.ifjmtuxnhnzcidalbbfq:[YOUR-PASSWORD]@aws-0-eu-west-3.pooler.supabase.com:5432/postgres"
+
+
+# Supabase
+SUPABASE_URL="your-supabase-url"
+SUPABASE_ANON_KEY="your-supabase-anon-key"
+SUPABASE_SERVICE_ROLE_KEY="your-supabase-service-role-key"
+
+# JWT
+JWT_SECRET="your-jwt-secret-key"
+JWT_EXPIRES_IN="7d"
+
+# Application
+PORT=3000
+NODE_ENV="development"
+
+# CORS
+FRONTEND_URL="http://localhost:3001" 

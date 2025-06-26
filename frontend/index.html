@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrepreneur Congo - Planificateur Personnel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>🇨🇬 Congo Entrepreneur</h2>
+                <p>Votre assistant personnel</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#dashboard" class="nav-link active" data-section="dashboard">📊 Dashboard</a></li>
+                <li><a href="#swot" class="nav-link" data-section="swot">🎯 Analyse SWOT</a></li>
+                <li><a href="#planning" class="nav-link" data-section="planning">📅 Plan 4 Mois</a></li>
+                <li><a href="#opportunities" class="nav-link" data-section="opportunities">💡 Opportunités</a></li>
+                <li><a href="#productivity" class="nav-link" data-section="productivity">⚡ Productivité</a></li>
+                <li><a href="#resources" class="nav-link" data-section="resources">📚 Ressources Congo</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="content-section active">
+                <div class="section-header">
+                    <h1>Dashboard Principal</h1>
+                    <p>Vue d'ensemble de votre préparation Congo</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Countdown -->
+                    <div class="card countdown-card">
+                        <h3>🚀 Départ dans</h3>
+                        <div class="countdown-display">
+                            <div class="countdown-item">
+                                <span id="days">120</span>
+                                <label>Jours</label>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="hours">8</span>
+                                <label>Heures</label>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutes">30</span>
+                                <label>Minutes</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPIs -->
+                    <div class="card kpis-card">
+                        <h3>📈 Indicateurs Progression</h3>
+                        <div class="kpi-grid">
+                            <div class="kpi-item">
+                                <div class="kpi-value">75%</div>
+                                <div class="kpi-label">Préparation</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="kpi-item">
+                                <div class="kpi-value">12</div>
+                                <div class="kpi-label">Contacts établis</div>
+                            </div>
+                            <div class="kpi-item">
+                                <div class="kpi-value">3/5</div>
+                                <div class="kpi-label">Prototypes</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tâches du jour -->
+                    <div class="card tasks-card">
+                        <h3>✅ Tâches Prioritaires Aujourd'hui</h3>
+                        <ul class="task-list">
+                            <li class="task-item">
+                                <input type="checkbox" id="task1">
+                                <label for="task1">Finaliser business plan drones</label>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" id="task2">
+                                <label for="task2">Contacter CARIA pour partenariat</label>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" id="task3">
+                                <label for="task3">Étudier réglementation drone Congo</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Météo économique -->
+                    <div class="card weather-card">
+                        <h3>🌡️ Météo Économique Congo</h3>
+                        <div class="economic-weather">
+                            <div class="weather-main">
+                                <span class="weather-icon">📈</span>
+                                <span class="weather-status">Favorable</span>
+                            </div>
+                            <div class="weather-details">
+                                <div>Croissance PIB: +4.4%</div>
+                                <div>Pétrole: 85$/baril</div>
+                                <div>Taux change: Stable</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SWOT Section -->
+            <section id="swot" class="content-section">
+                <div class="section-header">
+                    <h1>Analyse SWOT Personnelle</h1>
+                    <p>Identifiez vos forces, faiblesses, opportunités et menaces</p>
+                </div>
+
+                <div class="swot-grid">
+                    <div class="swot-quadrant forces">
+                        <h3>💪 Forces</h3>
+                        <div class="swot-content" id="forces-content">
+                            <div class="swot-item">Diplôme Epitech Architecture Logiciel</div>
+                            <div class="swot-item">Spécialisation Data & IA</div>
+                            <div class="swot-item">Vision entrepreneuriale claire</div>
+                            <div class="swot-item">Connaissance technologies modernes</div>
+                        </div>
+                        <button class="btn btn--secondary add-item-btn" data-category="forces">+ Ajouter</button>
+                    </div>
+
+                    <div class="swot-quadrant faiblesses">
+                        <h3>⚠️ Faiblesses</h3>
+                        <div class="swot-content" id="faiblesses-content">
+                            <div class="swot-item">Manque expérience terrain Congo</div>
+                            <div class="swot-item">Absence réseau professionnel local</div>
+                            <div class="swot-item">Méconnaissance spécificités culturelles</div>
+                            <div class="swot-item">Capital départ potentiellement limité</div>
+                        </div>
+                        <button class="btn btn--secondary add-item-btn" data-category="faiblesses">+ Ajouter</button>
+                    </div>
+
+                    <div class="swot-quadrant opportunites">
+                        <h3>🌟 Opportunités</h3>
+                        <div class="swot-content" id="opportunites-content">
+                            <div class="swot-item">Économie croissance 4,4% 2025</div>
+                            <div class="swot-item">Secteur pétrolier cherchant innovation</div>
+                            <div class="swot-item">Marché drones expansion Afrique</div>
+                            <div class="swot-item">CARIA Centre IA Brazzaville</div>
+                        </div>
+                        <button class="btn btn--secondary add-item-btn" data-category="opportunites">+ Ajouter</button>
+                    </div>
+
+                    <div class="swot-quadrant menaces">
+                        <h3>⚡ Menaces</h3>
+                        <div class="swot-content" id="menaces-content">
+                            <div class="swot-item">Écosystème entrepreneurial peu mature</div>
+                            <div class="swot-item">Difficultés accès financement</div>
+                            <div class="swot-item">Réglementation drone restrictive</div>
+                            <div class="swot-item">Concurrence internationale tech</div>
+                        </div>
+                        <button class="btn btn--secondary add-item-btn" data-category="menaces">+ Ajouter</button>
+                    </div>
+                </div>
+
+                <div class="swot-recommendations card">
+                    <h3>🎯 Recommandations Automatiques</h3>
+                    <div id="recommendations-list">
+                        <div class="recommendation">Exploiter votre expertise IA pour différencier vos services drones</div>
+                        <div class="recommendation">Développer un réseau local avant l'installation</div>
+                        <div class="recommendation">Étudier les spécificités culturelles congolaises</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Planning Section -->
+            <section id="planning" class="content-section">
+                <div class="section-header">
+                    <h1>Planificateur 4 Mois</h1>
+                    <p>Organisez votre préparation par étapes</p>
+                </div>
+
+                <div class="planning-timeline">
+                    <div class="timeline-month">
+                        <h3>Mois 1 - Analyse & Préparation</h3>
+                        <div class="month-tasks">
+                            <div class="task-category">
+                                <h4>📋 Personnel</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Analyse SWOT personnelle
+                                </label>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Formation leadership
+                                </label>
+                            </div>
+                            <div class="task-category">
+                                <h4>💼 Professionnel</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Étude marché drones
+                                </label>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Contact CARIA
+                                </label>
+                            </div>
+                            <div class="task-category">
+                                <h4>📄 Administratif</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Procédures création entreprise
+                                </label>
+                            </div>
+                        </div>
+                        <div class="month-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
+                            <span>40% complété</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-month">
+                        <h3>Mois 2 - Développement</h3>
+                        <div class="month-tasks">
+                            <div class="task-category">
+                                <h4>🔧 Technique</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Prototype drone agriculture
+                                </label>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> MVP conseil SI
+                                </label>
+                            </div>
+                            <div class="task-category">
+                                <h4>🤝 Relations</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Contact clients potentiels
+                                </label>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Formation interculturelle
+                                </label>
+                            </div>
+                            <div class="task-category">
+                                <h4>📋 Stratégie</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Business model canvas
+                                </label>
+                            </div>
+                        </div>
+                        <div class="month-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 20%"></div>
+                            </div>
+                            <span>20% complété</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-month">
+                        <h3>Mois 3 - Finalisation</h3>
+                        <div class="month-tasks">
+                            <div class="task-category">
+                                <h4>📊 Business</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Business plan complet
+                                </label>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Formation vente
+                                </label>
+                            </div>
+                            <div class="task-category">
+                                <h4>🤝 Partenariats</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Partenariats équipementiers
+                                </label>
+                            </div>
+                            <div class="task-category">
+                                <h4>🏠 Logistique</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Contrats location
+                                </label>
+                            </div>
+                        </div>
+                        <div class="month-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span>0% complété</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-month">
+                        <h3>Mois 4 - Lancement</h3>
+                        <div class="month-tasks">
+                            <div class="task-category">
+                                <h4>🧪 Tests</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Tests solutions
+                                </label>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Installation équipements
+                                </label>
+                            </div>
+                            <div class="task-category">
+                                <h4>💰 Finances</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Transfert fonds
+                                </label>
+                            </div>
+                            <div class="task-category">
+                                <h4>🚀 Lancement</h4>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Lancement activités
+                                </label>
+                                <label class="task-checkbox">
+                                    <input type="checkbox"> Campagne communication
+                                </label>
+                            </div>
+                        </div>
+                        <div class="month-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span>0% complété</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Opportunities Section -->
+            <section id="opportunities" class="content-section">
+                <div class="section-header">
+                    <h1>Analyse des Opportunités</h1>
+                    <p>Évaluez et comparez les potentiels de marché</p>
+                </div>
+
+                <div class="opportunities-tabs">
+                    <button class="tab-btn active" data-tab="drones">🚁 Drones</button>
+                    <button class="tab-btn" data-tab="si">💻 Conseil SI</button>
+                    <button class="tab-btn" data-tab="market-chart">📊 Graphique Marché</button>
+                </div>
+
+                <div class="tab-content active" id="drones-tab">
+                    <div class="opportunities-grid">
+                        <div class="opportunity-card">
+                            <h4>🛢️ Pétrole & Gaz</h4>
+                            <div class="opportunity-stats">
+                                <div class="stat">
+                                    <span class="stat-value">2B-5B FCFA</span>
+                                    <span class="stat-label">Potentiel</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Très faible</span>
+                                    <span class="stat-label">Concurrence</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">6-12 mois</span>
+                                    <span class="stat-label">ROI</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-score">Score: 9/10</div>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <h4>🌾 Agriculture</h4>
+                            <div class="opportunity-stats">
+                                <div class="stat">
+                                    <span class="stat-value">500M-1B FCFA</span>
+                                    <span class="stat-label">Potentiel</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Faible</span>
+                                    <span class="stat-label">Concurrence</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">12-18 mois</span>
+                                    <span class="stat-label">ROI</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-score">Score: 7/10</div>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <h4>⛏️ Mines</h4>
+                            <div class="opportunity-stats">
+                                <div class="stat">
+                                    <span class="stat-value">300M-800M FCFA</span>
+                                    <span class="stat-label">Potentiel</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Faible</span>
+                                    <span class="stat-label">Concurrence</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">12-24 mois</span>
+                                    <span class="stat-label">ROI</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-score">Score: 6/10</div>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <h4>🏗️ BTP</h4>
+                            <div class="opportunity-stats">
+                                <div class="stat">
+                                    <span class="stat-value">200M-500M FCFA</span>
+                                    <span class="stat-label">Potentiel</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Moyenne</span>
+                                    <span class="stat-label">Concurrence</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">18-24 mois</span>
+                                    <span class="stat-label">ROI</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-score">Score: 5/10</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="si-tab">
+                    <div class="opportunities-grid">
+                        <div class="opportunity-card">
+                            <h4>🏛️ Digitalisation Admin</h4>
+                            <div class="opportunity-stats">
+                                <div class="stat">
+                                    <span class="stat-value">1B-2B FCFA</span>
+                                    <span class="stat-label">Potentiel</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Élevée</span>
+                                    <span class="stat-label">Complexité</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">6-12 mois</span>
+                                    <span class="stat-label">Développement</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-score">Score: 8/10</div>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <h4>🛢️ Systèmes Pétroliers</h4>
+                            <div class="opportunity-stats">
+                                <div class="stat">
+                                    <span class="stat-value">800M-1.5B FCFA</span>
+                                    <span class="stat-label">Potentiel</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Très élevée</span>
+                                    <span class="stat-label">Complexité</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">12-18 mois</span>
+                                    <span class="stat-label">Développement</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-score">Score: 7/10</div>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <h4>🏦 Solutions Bancaires</h4>
+                            <div class="opportunity-stats">
+                                <div class="stat">
+                                    <span class="stat-value">600M-1.2B FCFA</span>
+                                    <span class="stat-label">Potentiel</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Élevée</span>
+                                    <span class="stat-label">Complexité</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">8-15 mois</span>
+                                    <span class="stat-label">Développement</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-score">Score: 6/10</div>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <h4>📊 ERP Entreprises</h4>
+                            <div class="opportunity-stats">
+                                <div class="stat">
+                                    <span class="stat-value">400M-800M FCFA</span>
+                                    <span class="stat-label">Potentiel</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Moyenne</span>
+                                    <span class="stat-label">Complexité</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">4-8 mois</span>
+                                    <span class="stat-label">Développement</span>
+                                </div>
+                            </div>
+                            <div class="opportunity-score">Score: 7/10</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="market-chart-tab">
+                    <div class="chart-container">
+                        <h3>Comparaison des Opportunités de Marché</h3>
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1749562573/pplx_code_interpreter/d48988d1_l7itvt.jpg" alt="Opportunités de marché Congo" class="market-chart">
+                        <p class="chart-description">Potentiel de marché estimé pour les différents secteurs d'activité au Congo Brazzaville (en millions de FCFA)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Productivity Section -->
+            <section id="productivity" class="content-section">
+                <div class="section-header">
+                    <h1>Outils Productivité</h1>
+                    <p>Optimisez votre temps et suivez vos habitudes</p>
+                </div>
+
+                <div class="productivity-grid">
+                    <!-- Pomodoro Timer -->
+                    <div class="card pomodoro-card">
+                        <h3>🍅 Timer Pomodoro</h3>
+                        <div class="pomodoro-timer">
+                            <div class="timer-display">
+                                <span id="timer-minutes">25</span>:<span id="timer-seconds">00</span>
+                            </div>
+                            <div class="timer-controls">
+                                <button class="btn btn--primary" id="start-timer">Démarrer</button>
+                                <button class="btn btn--secondary" id="pause-timer">Pause</button>
+                                <button class="btn btn--outline" id="reset-timer">Reset</button>
+                            </div>
+                            <div class="timer-status">
+                                <span id="timer-status">Prêt à commencer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Habitudes -->
+                    <div class="card habits-card">
+                        <h3>🎯 Suivi des Habitudes</h3>
+                        <div class="habits-list">
+                            <div class="habit-item">
+                                <span class="habit-name">💪 Sport (1h)</span>
+                                <div class="habit-tracker">
+                                    <span class="habit-streak">Série: 5 jours</span>
+                                    <button class="btn btn--sm btn--primary mark-done">✓</button>
+                                </div>
+                            </div>
+                            <div class="habit-item">
+                                <span class="habit-name">📚 Lecture tech (30min)</span>
+                                <div class="habit-tracker">
+                                    <span class="habit-streak">Série: 3 jours</span>
+                                    <button class="btn btn--sm btn--primary mark-done">✓</button>
+                                </div>
+                            </div>
+                            <div class="habit-item">
+                                <span class="habit-name">🤝 Networking (5 contacts)</span>
+                                <div class="habit-tracker">
+                                    <span class="habit-streak">Série: 2 jours</span>
+                                    <button class="btn btn--sm btn--primary mark-done">✓</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Objectifs SMART -->
+                    <div class="card smart-goals-card">
+                        <h3>🎯 Objectifs SMART</h3>
+                        <div class="smart-goals-list">
+                            <div class="smart-goal">
+                                <h4>Finaliser prototype drone agriculture</h4>
+                                <div class="goal-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 60%"></div>
+                                    </div>
+                                    <span>60% - Échéance: 15 juillet</span>
+                                </div>
+                            </div>
+                            <div class="smart-goal">
+                                <h4>Établir 20 contacts professionnels Congo</h4>
+                                <div class="goal-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 40%"></div>
+                                    </div>
+                                    <span>8/20 contacts - Échéance: 30 août</span>
+                                </div>
+                            </div>
+                            <div class="smart-goal">
+                                <h4>Lever 50M FCFA financement initial</h4>
+                                <div class="goal-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 20%"></div>
+                                    </div>
+                                    <span>10M/50M FCFA - Échéance: 30 septembre</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Planning Hebdomadaire -->
+                    <div class="card weekly-planning-card">
+                        <h3>📅 Planning Hebdomadaire</h3>
+                        <div class="weekly-view">
+                            <div class="week-day">
+                                <h5>Lundi</h5>
+                                <div class="day-tasks">
+                                    <div class="time-slot">09:00 - Développement prototype</div>
+                                    <div class="time-slot">14:00 - Recherche partenaires</div>
+                                    <div class="time-slot">18:00 - Sport</div>
+                                </div>
+                            </div>
+                            <div class="week-day">
+                                <h5>Mardi</h5>
+                                <div class="day-tasks">
+                                    <div class="time-slot">09:00 - Appels clients</div>
+                                    <div class="time-slot">15:00 - Formation interculturelle</div>
+                                </div>
+                            </div>
+                            <div class="week-day">
+                                <h5>Mercredi</h5>
+                                <div class="day-tasks">
+                                    <div class="time-slot">10:00 - Business plan</div>
+                                    <div class="time-slot">16:00 - Networking</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section id="resources" class="content-section">
+                <div class="section-header">
+                    <h1>Ressources Congo</h1>
+                    <p>Informations essentielles pour votre installation</p>
+                </div>
+
+                <div class="resources-grid">
+                    <!-- Contexte économique -->
+                    <div class="card economic-context-card">
+                        <h3>📊 Contexte Économique</h3>
+                        <div class="economic-indicators">
+                            <div class="indicator">
+                                <span class="indicator-label">PIB 2025</span>
+                                <span class="indicator-value">+4.4%</span>
+                            </div>
+                            <div class="indicator">
+                                <span class="indicator-label">Pétrole</span>
+                                <span class="indicator-value">85$/baril</span>
+                            </div>
+                            <div class="indicator">
+                                <span class="indicator-label">Inflation</span>
+                                <span class="indicator-value">2.8%</span>
+                            </div>
+                            <div class="indicator">
+                                <span class="indicator-label">Taux change</span>
+                                <span class="indicator-value">Stable</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contacts utiles -->
+                    <div class="card contacts-card">
+                        <h3>📞 Contacts Utiles</h3>
+                        <div class="contacts-list">
+                            <div class="contact-item">
+                                <h4>🤖 CARIA</h4>
+                                <p>Centre Africain Recherche IA - Brazzaville</p>
+                                <span class="contact-type">Partenariat technologique</span>
+                            </div>
+                            <div class="contact-item">
+                                <h4>🏢 TotalEnergies</h4>
+                                <p>Startup Center - Incubateur</p>
+                                <span class="contact-type">Incubation et financement</span>
+                            </div>
+                            <div class="contact-item">
+                                <h4>💰 FIGA</h4>
+                                <p>Financement PME</p>
+                                <span class="contact-type">Financement entreprises</span>
+                            </div>
+                            <div class="contact-item">
+                                <h4>💻 ACSI</h4>
+                                <p>Agence Congolaise Systèmes Information</p>
+                                <span class="contact-type">Partenariat SI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checklist administrative -->
+                    <div class="card admin-checklist-card">
+                        <h3>📋 Checklist Administrative</h3>
+                        <div class="checklist">
+                            <label class="checklist-item">
+                                <input type="checkbox"> Visa d'entrée et de séjour
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox"> Déclaration d'investissement
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox"> Enregistrement entreprise CFCE
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox"> Permis d'exploitation drone
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox"> Licence conseil en systèmes
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox"> Compte bancaire professionnel
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox"> Assurance responsabilité civile
+                            </label>
+                            <label class="checklist-item">
+                                <input type="checkbox"> Domiciliation bureau
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Guide culturel -->
+                    <div class="card cultural-guide-card">
+                        <h3>🌍 Guide Culturel</h3>
+                        <div class="cultural-tips">
+                            <div class="tip-category">
+                                <h4>✅ Do's (À faire)</h4>
+                                <ul>
+                                    <li>Privilégier les relations avant les transactions</li>
+                                    <li>Faire preuve de patience dans les décisions</li>
+                                    <li>Respecter la hiérarchie établie</li>
+                                    <li>Accorder du temps aux échanges sociaux</li>
+                                    <li>Adapter votre communication (indirecte)</li>
+                                </ul>
+                            </div>
+                            <div class="tip-category">
+                                <h4>❌ Don'ts (À éviter)</h4>
+                                <ul>
+                                    <li>Précipiter les négociations</li>
+                                    <li>Ignorer les codes sociaux</li>
+                                    <li>Négliger l'aspect relationnel</li>
+                                    <li>Être trop direct dans la critique</li>
+                                    <li>Minimiser l'importance du protocole</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
